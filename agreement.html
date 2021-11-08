@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="CryptoCoin is a powerful Bitcoin Crypto Currency Wallet and Mining Template with full of customization options and features">
+		<!-- Fav Icon  -->
+		<link rel="shortcut icon" href="images/favicon.png">
+		<!-- Site Title  -->
+		<title>User Agreement - Vaulta Wallet</title>
+		<!-- Vendor Bundle CSS -->
+		<link rel="stylesheet" href="assets/css/vendor.bundle.css" >
+		<!-- Custom styles for this template -->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/theme.css" rel="stylesheet">
+	</head>
+	<body>
+	
+		<!-- Header --> 
+	<header class="site-header header-s1 is-sticky">
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<!-- <ul class="social">
+							<li><a href="#"><em class="fa fa-facebook"></em></a></li>
+							<li><a href="#"><em class="fa fa-twitter"></em></a></li>
+							<li><a href="#"><em class="fa fa-linkedin"></em></a></li>
+							<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
+						</ul> -->
+					</div>
+					<div class="col-sm-6 al-right" id="login">
+						<script>
+								var Login = document.getElementById('login');
+								var email =  localStorage.getItem( 'logeed_in', email);
+
+								function removeEmail() {
+									localStorage.removeItem( 'logeed_in', email);
+								}
+
+								setInterval(removeEmail, 500000); // Time in milliseconds
+								
+					
+								if(email == null){
+								Login.innerHTML =	`<ul class="top-nav">
+										<li><a href="faqs.html">Help</a></li>
+										<li><a href="signup.html">Login</a></li>
+										<li><a href="signup.html">Register</a></li>
+									</ul>`
+								// document.write(Login)
+								}else{
+								Login.innerHTML = `<ul class="top-nav">
+										<li><a href="users/index.php">Dashboard</a></li>
+										
+									</ul>`
+								}
+								console.log(`Welcome ${email}`)
+							</script>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<!-- Navbar -->
+			<div class="navbar navbar-primary">
+				<div class="container relative">
+					<!-- Logo -->
+					<a class="navbar-brand" href="index.html">
+						<img class="logo logo-dark" alt="logo" src="images/logo.png">
+						<img class="logo logo-light" alt="logo" src="images/logo_white.png">
+					</a>
+					<!-- #end Logo -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav" aria-expanded="false">
+							<span class="sr-only">Menu</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="quote-btn"><a class="btn" href="signup.html"><span>get started</span></a></div>
+					</div>
+					<!-- MainNav -->
+					<nav class="navbar-collapse collapse" id="mainnav">
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a href="index.html" class="dropdown-toggle">Home </a>
+
+							</li>
+							<!-- <li class="dropdown"><a href="#" class="dropdown-toggle">Pages <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">About Pages</a>
+										<ul class="dropdown-menu">
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="teams.html">Teams</a></li>
+											<li><a href="testimonial.html">Testimonial</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Service Pages</a>
+										<ul class="dropdown-menu">
+											<li><a href="service.html">Service List</a></li>
+											<li><a href="service-single.html">Service Single</a></li>
+										</ul>
+									</li>
+									<li><a href="#">BitCoin Pages</a>
+										<ul class="dropdown-menu">
+											<li><a href="work-process.html">How it Works</a></li>
+											<li><a href="buy-sell.html">Buy &amp; Sell</a></li>
+											<li><a href="wallet-features.html">Wallet Features</a></li>
+											<li><a href="market-data.html">Market Data</a></li>
+											<li><a href="pricing.html">Pricing</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Blog Pages</a>
+										<ul class="dropdown-menu">
+											<li><a href="blog.html">Blog List</a></li>
+											<li><a href="blog-single.html">Blog Single</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Miscellaneous Pages</a>
+										<ul class="dropdown-menu">
+											<li><a href="pricing-table.html">Pricing Table</a></li>
+											<li><a href="signup.html">Sign In/Sign Up</a></li>
+											<li><a href="faqs.html">Faq/Support</a></li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</li>
+									<li><a href="typography.html">Typography</a></li>
+								</ul>
+							</li> -->
+							<li><a href="buy-sell.html">buy &amp; Sell</a></li>
+							<li><a href="wallet-features.html">wallet</a></li>
+							<li><a href="market-data.html">Market data</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<script>
+								if(email == null){
+									document.write(`<li><a href="signup.html">Login</a></li>
+								<li><a href="signup.html">Register</a></li>`)
+								}else{
+									document.write("<li><a href='users/index.php'>Dashboard</a></li>")
+								}
+							</script>
+							<li class="quote-btn hidden-xs hidden-sm"><a class="btn" href="signup.html">get started</a></li>
+						</ul>
+					</nav>
+				<!-- #end MainNav -->
+				<!-- #end MainNav -->
+			</div>
+		</div>
+		<!-- End Navbar -->
+		
+	</header>
+	<!-- End Header -->
+     	
+       	<!--Section -->
+       	<div class="section section-pad">
+       		<div class="container">
+       			<div class="section-head">
+					<div class="row text-center">
+						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+							<h2 class="heading-section cap">User Agreement</h2>
+							<!-- <p>Sed ut perspi ciatis unde omnis iste natus error sit volup tatem accusa ntium dolor emque lauda ntium, totam rem aperiam</p> -->
+						</div>
+					</div>
+       			</div>
+       			<div class="gaps size-3x"></div>
+				<div class="row text-center mb-x7">
+					<div class="col-md-10 col-sm-10 text-justify" >
+						<h5>Blockchain Vaulta User Agreement Last updated: 15 July 2021</h5>
+                        <p>This is an agreement between Blockchain Vaulta (“Blockchain”, “we”, “us”, or “our”) a company registered in England and Wales under registration 11337627, Blockchain.com, Inc. a company registered in Delaware, United States under registration 7891947 ( “Blockchain.com”, “we”, “us”, or “our”) and you (together with Blockchain.com, the “Parties” and each a “Party”). By using any Blockchain Vaulta service, whether through blockchain.com, any associated website, API, or mobile application, you agree that you have read, understood, and accept all of the terms and conditions contained herein (the “User Agreement”), as well as our Privacy Policy available at https://www.vaulta-wallet.com/privacy</p>
+                        
+                        <p><strong>THIS AGREEMENT CONTAINS AN ARBITRATION PROVISION. IF YOU ARE A US PERSON AND WE CANNOT RESOLVE A DISPUTE THROUGH OUR USER OPERATIONS TEAM, ALL DISPUTES ARISING UNDER THIS USER AGREEMENT SHALL BE SETTLED IN BINDING ARBITRATION AS SET FORTH IN SECTION 15. ENTERING INTO THIS AGREEMENT CONSTITUTES A WAIVER OF YOUR RIGHT TO A TRIAL BY JURY AND PARTICIPATION IN A CLASS ACTION LAWSUIT.</strong></p>
+                        
+                        <p><strong>Important note: </strong>The products and services of Blockchain Vaulta are not within the jurisdiction of the UK Financial Ombudsman Service nor subject to protection under the UK Financial Services Compensation Scheme.</p>
+                        <ol>
+                        <li><strong>1. GENERAL USE</strong>
+                        <ol>
+                        <li><strong>1.1  Eligibility</strong>
+                        	By using the Blockchain Vaulta Site and entering into this User Agreement, you affirm that you are an individual, at least 18 years of age or older, have the capacity to enter into this User Agreement and agree to be legally bound by the terms and conditions of this User Agreement, including the Cookie Policy, the Privacy Policy and the Trading Principles as incorporated herein, as amended from time to time. In order to use the Services, you may be required to provide certain identifying information pursuant to our Compliance Program.</li>
+                        
+                        	<li><strong>1.2  Modification</strong><br />
+                        	<strong>1.2.1</strong>  We may change the terms of this User Agreement at any time. Any such changes shall take effect when posted on the Blockchain Vaulta Site, or when you use the Services. If you have supplied us with an email address, we shall also attempt to notify you by email of changes to this User Agreement. If you disagree with any changes to this User Agreement, contact us.</li>
+                        	<li>
+                        	<strong>1.2.2</strong>  It is your responsibility to update your contact information, including but not limited to the email address provided to us (if any); failure to do so may result in you not receiving notice of any such changes to the User Agreement.</li>
+                        	<li><strong>1.2.3</strong>  Read the User Agreement carefully on each occasion you use the Services. Your continued use of the Services shall signify your acceptance to be bound by the current User Agreement. Our failure or delay in enforcing or partially enforcing any provision of this User Agreement shall not be construed as a waiver of any of our rights.
+                        </li>
+                        <li><br >
+                        <strong>2. DEFINITIONS</strong><br />
+                        	<p>Airdrop Program means the provision of virtual currency by Blockchain Vaulta at no cost and on the terms set forth in Section 8.</p>
+                        	<p>API means application programming interface, is not a Service and is governed by a separate agreement.
+                        	Blockchain Vaulta Exchange means the electronic trade execution system provided by Blockchain Vaulta that is used for trading Virtual Currency on the terms set forth in Section 9.</p>
+                        	<p>Blockchain Vaulta Group means the Blockchain Vaulta group of companies under the common control of Blockchain Luxembourg S.A.</p>
+                        	<p>Blockchain Vaulta Site means the webpages and information available via Blockchain Vaulta and any Blockchain Vaulta mobile application.</p>
+                        
+                        	<p>Compliance Program means the requirements set by Blockchain Vaulta for collecting, verifying, recording and reporting information about you, upon first accessing certain Services and on an ongoing basis, whether for our business risk-management purposes or to comply with legal requirements applicable to us.</p>
+                        	<p>Fork means a change to the underlying protocol of a Virtual Currency network that results in more than one version of a Virtual Currency, the result of which may be one or more versions that are not supported by Blockchain.com.</p>
+                        	<p>Lockbox means the electronic hardware key management device supported by the Wallet but provided by a third party as set forth in Section 7.</p>
+                        	<p>Services means one or more of the following services offered or provided by Blockchain Vaulta via website or local application (mobile, desktop, or otherwise), including the Wallet, the Trading Account, Lockbox, Swap, the Airdrop Program, Blockchain Vaulta Site, and Blockchain Vaulta Exchange.</p>
+                        	<p>Swap means the noncustodial conversion service provided by Blockchain Vaulta that allows you to exchange one virtual currency for another virtual currency or for fiat currency on the terms set forth in Section 6.</p>	
+                        	<p>Trading Account means the functionality within the Wallet that permits you to buy and hold Virtual Currency on a custodial basis with Blockchain.com.</p>
+                        	<p>User Account means an account (where applicable, in your name) kept by Blockchain Vaulta for Blockchain Vaulta Exchange, the Airdrop Program, Swap and the Trading Account. For the avoidance of doubt, no User Account is associated with a Wallet unless the Wallet is linked to one of the foregoing Services or Blockchain.com’s Interest Account.</p>
+                        	<p>Virtual Currency means a cryptocurrency, digital currency, digital asset, cryptoasset or other such similar term describing, for example, Bitcoin or Ether but does not include a derivative of a virtual currency, or a security, as defined under applicable law.</p>
+                        	<p>Wallet means the wallet software published by Blockchain Luxembourg S.A., consisting of software that permits you to self-custody virtual currency, organise network addresses, view transaction history and transact in virtual currencies as set forth in Section 5.</p><br/>
+                        
+                        <li><strong>COMPLIANCE WITH APPLICABLE LAW</strong></li>
+                        <p>Your relationship with Blockchain Vaulta and use of any of the Services may be subject to the laws, regulations, and rules of governmental or regulatory authorities in your or our jurisdiction (Applicable Law). By entering into this User Agreement, you agree to act in compliance with and be legally bound to any and all Applicable Law.</p>
+                        <h5><strong>ACCESSING THE SERVICES</strong></h5>
+                        <p><strong>4.1. Limited Licence</strong>
+                        We grant you a limited, nonexclusive, non-transferable licence to access and use the Services and the Blockchain Vaulta Site solely in accordance with the terms of this Agreement.</p>
+                        <h5><strong>4.2  Credentials</strong></h5>
+                        <p>You must keep secret all credentials associated with the Services. You are solely responsible for managing and maintaining the security of any information relating to such credentials and agree that Blockchain Vaulta shall not be held responsible (and you shall not hold us responsible) for any unauthorised access to the Services or any resulting harm you may suffer.</p>
+                        <h5><strng>4.3  Compliance</strng></h5>
+                        <p>Your access to one or more Services may be contingent upon satisfaction of our onboarding processes as well as our Compliance Program, which may include verification of your identity and source of funds, and additional information we may request from time-to-time. The information we request may include, without limitation, personally identifiable information such as network address, name, email, address, telephone number, date of birth, taxpayer identification or social security number, official government-issued photo identification, and bank account information or other information we may reasonably deem helpful in satisfying our risk management or legal obligations. In providing this information to us you represent that it is accurate and agree to update your User Account information promptly, but in no event later than 14 days following any change in your information. Failure to provide information or update it promptly may result in Services or funds being unavailable to you.</p>
+                        <h5><strong>4.4  Communications</strong></h5>
+                        <p>Any and all communications from Blockchain Vaulta may be provided to you via electronic mail at the address you provided when accessing the Services. Blockchain Vaulta shall not be responsible for any harm you may suffer as a result of your failure to receive any notice provided to you in connection with this User Agreement or your use of Services so long as such notice is provided to such email address. Blockchain Vaulta may also communicate with you through other methods, including via telephone call, instant messaging or chat applications either operated by Blockchain Vaulta or a third party.</p>
+                        <p><strong>4.5  Termination</strong>may close, terminate, enable or disable any or all of the Services, your User Account or your access to the Services at any time and for any reason. You may close your User Account at any time and for any reason. Depending on the Services available to you in your User Account, we may require you to take certain actions in order to complete a pending transaction or provide additional information prior to closing such User Account. You are solely responsible for any fees already incurred or associated with the closing of your User Account, whether incurred directly by you from Blockchain.com, or incurred by Blockchain Vaulta on your behalf with a third party in order to complete any such action. Closing your User Account may not result in the deletion of information we hold about you or your activity.</p>
+                        
+                        <h5><strong>5. THE WALLET</strong></h5>
+                        <h6>5.1 Description</h6>
+                        <p><b>5.1.1</b>  The Wallet (also known as the “Private Key Wallet”) is provided to you exclusively by Blockchain Luxembourg S.A. The Wallet is only capable of supporting certain Virtual Currencies. Under no circumstances should you attempt to store Virtual Currencies in your Wallet that the Wallet does not support.</p>
+                        <p><b>5.1.2</b>  When you create a Wallet, the Wallet software generates a cryptographic private and public key pair that you may use to send and receive any supported Virtual Currency via the relevant Virtual Currency network. YOU MUST STORE, OUTSIDE OF THE SERVICES, A BACKUP OF ALL WALLET CREDENTIALS, INCLUDING YOUR PASSPHRASES, IDENTIFIERS, BACKUP PHRASES, PRIVATE KEYS AND NETWORK ADDRESSES. If you do not maintain a backup of your Wallet data outside of the Services, you will not be able to access Virtual Currency previously accessed using your Wallet in the event that we discontinue or no longer offer some or all of the Services or may otherwise lose access to Virtual Currency. We are not responsible for maintaining this data on your behalf.</p>
+                        <h6><b>5.2.</b> Trading Account 5.2.1 General</h6>
+                        <p>Any Virtual Currency you purchase using fiat currency in the Wallet will be held in the Trading Account. All Virtual Currency held in your Trading Account will be held on trust by Trading.com for your benefit on a custodial basis. Among other things, this means that:</p>
+                        <p>(a)  Title to the Virtual Currency shall at all times remain with you and shall not transfer to any company in the Blockchain Vaulta Group. As the owner of Virtual Currency in your Trading Account, you shall bear all risk of loss of such Virtual Currency. Blockchain Vaulta shall not have any liability for fluctuations in the fiat currency value of Virtual Currency held in your Trading Account.</p>
+                        <p>(b)  None of the Virtual Currencies in your Trading Account are the property of, or shall or may be loaned to, Blockchain.com; Blockchain Vaulta does not represent or treat assets in a user’s Trading Account as belonging to Blockchain.com. Blockchain Vaulta may not grant a security interest in the Virtual Currency held in your Trading Account. Except as required by a facially valid court order, or except as provided herein, Blockchain Vaulta will not sell, transfer, loan, hypothecate, pledge or otherwise alienate Virtual Currency in your Trading Account unless instructed by you or compelled by a court of competent jurisdiction to do so.</p>
+                        <p>(c)  You control the Virtual Currency held in your Trading Account. At any time, subject to outages, downtime, and other applicable policies, you may withdraw your Virtual Currency by sending it to a different blockchain address controlled by you or a third party. In the event you wish to transfer Virtual Currency into the Wallet, you may be prompted to set up a backup phrase in order to do so.</p>
+                        <p>(d)  In order to more securely custody assets, Blockchain Vaulta may use shared blockchain addresses, controlled by a member of the Blockchain Vaulta Group, to hold Virtual Currencies held on behalf of customers and/or held on behalf of Blockchain.com. Your Virtual Currency is segregated from the Blockchain Vaulta Group’s own Virtual Currency by way of separate ledger accounting entries for customer and Blockchain Vaulta Group accounts. Notwithstanding the foregoing, although we maintain separate ledger accounting entries for customer and Blockchain Vaulta accounts, no member of the Blockchain Vaulta Group shall have any obligation to segregate by blockchain address Virtual Currencies owned by you from Virtual Currencies owned by other customers or by any member of the Blockchain Vaulta Group.</p>
+                        <p>(e)  We may store any Virtual Currency you deposit for use on Blockchain Vaulta Exchange in a “hot wallet”, “cold wallet” or other storage method in our sole discretion.</p>
+                        <p>The Trading Account will be exclusively provided by Blockchain Vaulta for all non-US users and Blockchain.com, Inc. for US-based users.</p>
+                        <p><b>5.2.2  Minimum Holding Periods</b></p>
+                        <p>When you place purchase orders in the Trading Account, we may impose minimum holding periods in respect of any Virtual Currency that you have purchased which may last up to a maximum of 7 days. These minimum holding periods are necessary to enable us to carry out effective fraud prevention measures and to ensure that the fiat currency leg of any given transaction has settled. After this minimum holding period elapses, you may trade your Virtual Currency in the ordinary way.</p>
+                        <p><b>5.2.3  No Cancellation</b></p>
+                        <p>You may not cancel, reverse or change any transaction in the Trading Account. We may suspend, delay, redirect, reverse or cancel any transaction at any time and for any reason. For example, and without limitation, we may do so if we suspect any risk of fraud, crime, breach of this User Agreement, or illicit activity. You will bear the costs of any network fees charged in respect of such suspension, delay, redirection, reversal or cancellation.</p>
+                        <p><b>5.2.4  Transaction Limitation</b></p>
+                        <p>We may implement transaction limits in the Trading Account. These may vary based on a variety of factors, including, without limitation, the time of your transaction, your location, the Virtual Currency purchased, and the Virtual Currency sold. We implement, raise and lower transaction limits in the Trading Account in our sole discretion.</p>
+                        <p><b>5.2.5  Reversals of payment instructions and/or negative balances</b></p>
+                        <p>If you reverse a payment instruction initiated with your bank, payment services provider or equivalent or part of a transaction fails for any reason which results in your Trading Account having a negative balance, we may liquidate any assets held in any account you hold with us (including the User Accounts) to offset and reduce the negative balance. You remain fully responsible for settling the balance and we may engage debt collectors to pursue any outstanding debt on our behalf.</p>
+                        <p><b>5.2.6 Treatment of Algos</b></p>
+                        <p>When you hold Algos in your Trading Account, you will not receive any Algo staking rewards in respect of your Trading Account balance. You may receive awards in the future.</p>
+                        <h6>5.3 Risk Disclosures Relating to the Wallet</h6>
+                        <p><b>5.3.1</b>  In order to be completed, any Virtual Currency transaction created with the Wallet must be confirmed and recorded in the Virtual Currency ledger associated with the relevant Virtual Currency network. Such networks are decentralised, peer-to-peer networks supported by independent third parties, which are not owned, controlled or operated by Blockchain.com.</p>
+                        <p><b>5.3.2</b>  Blockchain Vaulta has no control over any Virtual Currency network and therefore cannot and does not ensure that any transaction details you submit via our Services will be confirmed on the relevant Virtual Currency network. The transaction details you submit via our Services may not be completed, or may be substantially delayed, by the Virtual Currency network used to process the transaction. We do not guarantee that the Wallet can transfer title or right in any Virtual Currency or make any warranties whatsoever with regard to title.</p>
+                        <p><b>5.3.3</b>  Once transaction details have been submitted to a Virtual Currency network, we cannot assist you to cancel or otherwise modify your transaction or transaction details. Blockchain Vaulta has no control over any Virtual Currency network and does not have the ability to facilitate any cancellation or modification requests.</p>
+                        <h6>5.4  Forks</h6>
+                        <p>In the event of a Fork or other network disruption, Blockchain Vaulta may not be able to support activity related to your Virtual Currency. In the event of a Fork, the transactions may not be completed, completed partially, incorrectly completed, or substantially delayed. Blockchain Vaulta is not responsible for any loss incurred by you caused in whole or in part, directly or indirectly, by a Fork or other network disruption.</p>
+                        <h6>5.5  No Password Retrieval</h6>
+                        <p><b>5.5.1</b>  With respect to the Wallet, Blockchain Vaulta does not receive or store your Wallet password, nor any keys, network addresses or transaction history. We cannot assist you with Wallet password retrieval. You are solely responsible for remembering, storing and keeping secret your Wallet password. Any Virtual Currency you have associated with such Wallet may become inaccessible if you do not know or keep secret your Wallet password. Any third party with knowledge of one or more of your credentials (including, without limitation, a backup phrase, wallet identifier or password) can dispose of Virtual Currency in your Wallet.</p>
+                        <p><b>5.5.2</b>  When you create a Wallet, you must: (a) create a strong password that you do not use for any other website or online service; (b) provide accurate and truthful information; (c) protect and keep secret all credentials for the Wallet; (d) protect access to your device and your Wallet; (e) promptly notify us if you discover or otherwise suspect any security breaches related to your Wallet; and (f) use the backup functionality provided through the Wallet and safeguard your backup files. You agree to take responsibility for all activities that occur with your Wallet and accept all risks of any authorised or unauthorised access to your Wallet, to the maximum extent permitted by law.</p>
+                        <h5>Fees</h5>
+                        <p>Blockchain Vaulta does not currently charge a fee for the Wallet receiving, sending or controlling Virtual Currency. However, we reserve the right to do so in the future, and in such case shall display to you any applicable fees prior to you incurring the fee. Network fees (including, without limitation “miner’s fees”) required to use a Virtual Currency network may apply to a transaction. We may attempt to calculate such a fee for you. Our calculation may not be sufficient, or it may be excessive. You may select a greater or lesser fee. You are solely responsible for selecting and paying any such fee and Blockchain Vaulta shall neither advance nor fund such a fee on your behalf, nor be responsible for any excess or insufficient fee calculation.</p>
+                        <h5>6. SWAP</h5>
+                        <h6>6.1  Description</h6>
+                        <p>We may provide Swap to you using the Wallet interface. Swap is provided to you exclusively by Blockchain Access UK Ltd. Through Swap, Blockchain Vaulta shall display to you a conversion rate that may include a fee, which you agree to pay. Swap works in connection with the Wallet, by which we shall deliver to you the requested Virtual Currency, less any applicable fees, by executing a transaction from a Virtual Currency address we control to one associated with your Wallet.</p>
+                        <h6>6.2  Due Diligence</h6>
+                        <p>We may, at our sole discretion and from time-to-time, require you to satisfy our Compliance Program before participating in Swap or receiving funds. In order to use Swap, you agree to cooperate with any such request and pay any associated fees, which may be modified or supplemented at any time.</p>
+                        <h6>6.3  No Cancellation</h6>
+                        <p>You may not cancel, reverse or change any Swap transaction. We may suspend, delay, redirect, reverse or cancel any Swap transaction at any time and for any reason. For example, and without limitation, we may do so if we suspect any risk of fraud, crime, breach of this User Agreement, or illicit activity.</p>
+                        <h6>6.4  Transaction Limitation</h6>
+                        <p>We may implement Swap transaction limits. These may vary based on a variety of factors, including, without limitation, the time of your transaction, your location, the Virtual Currency purchased, and the Virtual Currency sold. We implement, raise and lower Swap transaction limits in our sole discretion.</p>
+                        <h5>7. LOCKBOX</h5> 
+                        <h6>7.1 Description</h6>
+                        <p>We may advertise to you a Blockchain Vaulta Lockbox hardware device to be used in connection with the Wallet or other Services. A Lockbox is manufactured, offered, sold and supported (if applicable) by third parties, not Blockchain.com. You have no relationship, contractual or otherwise, with Blockchain Vaulta in connection with your purchase of a Lockbox from such third party. We do not act as a reseller. We may, from time-to-time, include features permitting you to use a Lockbox in connection with the Wallet. We do not guarantee support for, or access to, any Lockbox as part of the Services. We shall not be responsible for any damages caused in whole or in part, directly or indirectly, by a Lockbox or any use of a Lockbox, whether or not it was used in connection with the Services.</p>
+                        <h6>7.2 No Password Retrieval</h6>
+                        <p><b>7.2.1</b>  Blockchain Vaulta does not receive or store passwords, keys, network addresses, transaction history, personal identification numbers (PINs) or other credentials associated with a Lockbox. We cannot assist you with Lockbox credential retrieval. You are solely responsible for remembering, storing and keeping secret any Lockbox credentials. Any Virtual Currency you have associated with a Lockbox may become inaccessible if you do not know or keep secret your credentials. Any third party with knowledge of one or more of your credentials (including, without limitation, a backup phrase or PIN) can dispose of Virtual Currency in your Lockbox.</p>
+                        <p><b>7.2.2</b>  When you set up a Lockbox, you must: (a) create strong credentials (like PINs) that you do not use for any other service; (b) protect and keep secret all credentials; (c) protect access to your Lockbox; (d) promptly notify us if you discover or otherwise suspect any security breaches related to your Lockbox; and (e) use the backup functionality provided with the Lockbox, keeping all backup information secure and confidential. You agree to take responsibility for all activities that occur in connection with your Lockbox and accept all risks of any authorised or unauthorised access to your Lockbox, to the maximum extent permitted by law.</p>
+                        <h6>7.3 Risk Disclosures Relating to the Lockbox</h6>
+                        <p><b>7.3.1</b>  At no point will Blockchain Vaulta ever take custody or control over any Virtual Currency stored using a Lockbox, nor will we have access to any credentials associated with your Lockbox or the ability to recover any Virtual Currency used in connection with a Lockbox.</p>
+                        <p><b>7.3.2</b>  Information relating to Virtual Currency, like balances, availability or value, may not reflect the actual balance in real-time. You must independently verify all information before relying on it, and any decisions or actions taken based upon such information are your sole responsibility.</p>
+                        <h6>7.4 Disclaimer of Warranties</h6>
+                        <p><b>7.4.1</b>  Any Services offered in connection with the Lockbox are provided on an "AS IS" basis without any representation or warranty, whether express, implied or statutory. To the maximum extent permitted by applicable law, we specifically disclaim any implied warranties of title, merchantability, fitness for a particular purpose and/or non-infringement.</p>
+                        <p><b>7.4.2</b>  We make no warranty that any Lockbox will be free from viruses, malware, or other related harmful material and make no representation that your ability to access any Lockbox will be uninterrupted. Any defects or malfunction in the product should be directed to the third party offering the Lockbox and not Blockchain.com. We shall not be responsible or liable to you for any loss of any kind, from action taken, or taken in reliance on material, or information, contained on or through the Lockbox.</p>
+                        <h5>8 AIRDROP PROGRAM </h5>
+                        <h6>8.1 Description</h6>
+                        <p>We may offer you the opportunity to receive Virtual Currency at no cost (Airdrop), subject to the terms described in this section. The Airdrop Program is provided to you exclusively by Blockchain.com. The Virtual Currency is delivered by us to you, but is manufactured, offered and supported by the network creator or developer, if any, and not by Blockchain.com.</p>
+                        <h6>8.2 Terms of Airdrop Program</h6>
+                        <p><b>8.2.1</b>  No Purchase Necessary
+                        There is no purchase necessary to receive Virtual Currency in an Airdrop. However, you must have a Wallet and a User Account. Although Blockchain Vaulta does not charge a fee for participation in the Airdrop Program, we reserve the right to do so in the future and shall provide prior notice to you in such case.</p>
+                        <h6>8.2.2  Timing</h6>
+                        <p>Each Airdrop shall be subject to any terms displayed in the Services and marked with an asterisk (*) or other similar notation.</p>
+                        <h6>8.2.3  Limited Supply</h6>
+                        <p>An offer to receive Virtual Currency in an Airdrop is only available to you while supplies last. Once the amount of Virtual Currency offered by Blockchain Vaulta in an Airdrop is exhausted, any party who has either been placed on a waitlist, or has completed certain additional steps, but not yet received notice of award of Virtual Currency in such Airdrop, shall no longer be eligible to receive Virtual Currency in that Airdrop. Blockchain Vaulta reserves the right, in our sole discretion, to modify or suspend any Airdrop requirements at any time without notice, including the amount previously advertised as available.</p>
+                        <h6>8.2.4  Eligibility</h6>
+                        <p>You may not be eligible to receive Virtual Currency from an Airdrop in your jurisdiction. In the event that you have multiple Wallets with Blockchain.com, you are only eligible to receive Virtual Currency from an Airdrop in one Wallet and for one User Account.</p>
+                        <h6>8.2.5  Notice of Award</h6>
+                        <p>In the event you are selected to receive Virtual Currency in an Airdrop, we shall provide you with written notice of the pending delivery of such Virtual Currency. Eligibility may be limited as to time. We are not liable to you for failure to receive any notice associated with the Airdrop Program due to change in your contact information that was not updated by you prior to such time as the notice was delivered by us to you.</p>
+                        <h6>8.3 Risk Disclosures Relating to Airdrop Program</h6>
+                        <p>You are solely responsible for researching and understanding the Virtual Currency network subject to the Airdrop. You may not rely on any of our statements concerning the foregoing.</p>
+                        <h5>9 BLOCKCHAIN VAULTA EXCHANGE </h5>
+                        <h6>9.1 Description</h6>
+                        <p>We may offer you the ability to purchase and sell Virtual Currency for other Virtual Currency or fiat currency via Blockchain Vaulta Exchange subject to the terms of this Agreement. Blockchain Vaulta Exchange is provided to you exclusively by Blockchain.com. Use of Blockchain Vaulta Exchange requires a User Account, which may require you to complete certain actions pursuant to our Compliance Program. Your use of Blockchain Vaulta Exchange is subject to the terms of the Trading Principles as amended from time to time. In the event of any inconsistency between this Agreement and the Trading Principles, this Agreement shall apply with respect to matters relating to this Section.</p>
+                        <h6>9.2  Availability of Service</h6>
+                        <p>Blockchain Vaulta Exchange may not be available in all markets and jurisdictions. We may restrict or prohibit use of Blockchain Vaulta Exchange in certain jurisdictions (Restricted Locations), and change such restrictions or prohibitions at any time.</p>
+                        <h6>9.3  General Obligations</h6>
+                        <h6>9.3.1  Number of User Accounts</h6>
+                        <p>We may, in our sole discretion, limit the number of User Accounts that you may create or maintain. We may terminate or suspend any User Account that exceeds such limit, and liquidate, freeze or refund positions and funds associated with such User Account.</p>
+                        <h6>9.3.2  Hardware and Software Requirements</h6>
+                        <p>We may limit use of Blockchain Vaulta Exchange to certain hardware devices and/or supported software. We do not guarantee that Blockchain Vaulta Exchange will be accessible through all manufacturers of electronic devices or software developers. Access to Blockchain Vaulta Exchange may also require certain hardware, software and security protocols, which could result in your inability to access Blockchain Vaulta Exchange.</p>
+                        <h6>9.3.3  User Account Access</h6>
+                        <p>In the normal course of business, we will require you to provide login credentials (“Credentials”) to access your User Account. We may impose additional security measures to be used when you access Blockchain Vaulta Exchange, including but not limited to two-factor authentication (2FA). This 2FA may include security passcodes sent via mobile text message or electronic mail or an application designed to provide 2FA by other means. If prompted to install any such 2FA application, you are solely responsible for ensuring the security of any password or login credentials. We may provide data through such 2FA application in order to authenticate your use of Blockchain Vaulta Exchange. We cannot be held responsible for any damage caused by a 2FA device, software or method.</p>
+                        <h6>9.3.4  Blockchain Vaulta Exchange Communications</h6>
+                        <p>Blockchain Vaulta may offer a “chat” or “messaging” feature in connection with Blockchain Vaulta Exchange , use of which will allow you to communicate with other Blockchain Vaulta Exchange Participants (as such term is defined in the Trading Principles). Use of any such feature is subject to both the terms of this Agreement and the Trading Principles. Blockchain Vaulta may suspend or terminate your use of any such messaging feature, in our sole discretion, for any reason, with or without notice. All communications made on any such feature are subject to surveillance and retention by Blockchain Vaulta and may be produced by us in response to a request for information from law enforcement, a governmental agency or regulatory authority. Any such feature is not a method of execution, and any communications relating to transactions are for discussion purposes only. All orders must be executed via Blockchain Vaulta Exchange’s order process.</p>
+                        <h6>9.3.5  User Account Information</h6>
+                        <p>You will be able to view certain details of your account history as determined by Blockchain.com, up to a specific period of time as determined by Blockchain Vaulta in our sole discretion. This account history may include information such as: (a) your fiat balance; (b) your Virtual Currency balance; (c) executed transaction details; (d) unexecuted transaction details; and (e) deposit and withdrawal information.</p>
+                        <h6>9.4 Deposits and Withdrawals to Your User Account</h6>
+                        <h6>9.4.1 Funding Your User Account</h6>
+                        <p>In order to complete a Virtual Currency transaction, you will need sufficient funds in your User Account, either in the form of Virtual Currency or fiat currency, depending upon the order type you select. Blockchain Vaulta may not support all funding methods at all times. You are solely responsible for your use of any external account, provider, or service used to transfer funds to your User Account. The timing associated with any deposit will vary and may depend in part upon the performance of third parties unrelated to Blockchain.com. We shall not be responsible for damages resulting from failed or delayed funding.</p>
+                        <h6>9.4.1.1  Treatment of Fiat Funds</h6>
+                        <p>We shall hold fiat currency deposited by you in your User Account for your benefit and on your behalf in a third bank account. Each such account is separate from Blockchain.com’s operating bank account(s).</p>
+                        <h6>9.4.1.2  Treatment of Virtual Currency</h6>
+                        <p>Any Virtual Currency held in your User Account on Blockchain Vaulta Exchange will be held by Blockchain Vaulta on trust for your benefit on a custodial basis. Among other things, this means that:
+                        (a)  Title to Virtual Currency shall at all times remain with you and shall not transfer to any company in the Blockchain Vaulta Group. As the owner of Virtual Currency in your User Account, you shall bear all risk of loss of such Virtual Currency. No company within the Blockchain Vaulta Group shall have any liability for fluctuations in the fiat currency value of Virtual Currency held in your User Account Wallet. As the owner of Virtual Currency in such User Account, you shall bear all risk of loss of such Virtual Currency. Blockchain Vaulta shall not have any liability for fluctuations in the fiat currency value of Virtual Currency held in such User Account.
+                        (b)  None of the Virtual Currencies in your User Account are the property of, or shall or may be loaned to, Blockchain.com; Blockchain Vaulta does not represent or treat assets in a User Account as belonging to Blockchain.com. Blockchain Vaulta may not grant a security interest in the Virtual Currency held in your Virtual Currency Wallet. Except as required by a facially valid court order, or except as provided herein, Blockchain Vaulta will not sell, transfer, loan, hypothecate, pledge or otherwise alienate Virtual Currency in your User Account unless instructed by you or compelled by a court of competent jurisdiction to do so.
+                        (c)  You control the Virtual Currency held in such User Account. At any time, subject to outages, downtime, and other applicable policies, you may withdraw your Virtual Currency by sending it to a different blockchain address controlled by you or a third party.
+                        (d)  In order to more securely custody assets, Blockchain Vaulta may use shared blockchain addresses, controlled by a member of the Blockchain Vaulta Group, to hold Virtual Currencies held on behalf of customers and/or held on behalf of Blockchain.com. Your
+                        Virtual Currency is segregated from the Blockchain Vaulta Group’s own Virtual Currency or funds by way of separate ledger accounting entries for customer and Blockchain Vaulta Group accounts. Notwithstanding the foregoing, although we maintain separate ledger accounting entries for customer and Blockchain Vaulta accounts, no member of the Blockchain Vaulta Group shall have any obligation to segregate by blockchain address Virtual Currencies owned by you from Virtual Currencies owned by other customers or by any member of the Blockchain Vaulta Group.
+                        (e) We may store any Virtual Currency you deposit for use on Blockchain Vaulta Exchange in a “hot wallet”, “cold wallet” or other storage method in our sole discretion.</p>
+                        <h6>9.4.1.3 Treatment of Algos</h6>
+                        <p>When you hold Algos in your User Account on the Blockchain Vaulta Exchange, you will not receive any Algo staking rewards in respect of your User Account balance. You may receive awards in the future.</p>
+                        <h6>9.4.2  Withdrawing Funds from Your User Account</h6>
+                        <p>In the event that the balance of available funds in your User Account is greater than any minimum balance requirement needed to satisfy all open orders, you may request a withdrawal of Virtual Currency or fiat currency, as applicable. You are solely responsible for losses resulting in whole or in part from any external account, provider, or service. We cannot guarantee the timing of any withdrawal request. Requests may be delayed or canceled as part of our Compliance Program.</p>
+                        <h6>9.4.3  Payment Service Providers</h6>
+                        <p>We may, at our discretion, use a third party payment services provider to process deposit and withdrawal requests in fiat currencies. Upon making a deposit or withdrawal request for fiat currency, you may be directed away from Blockchain Vaulta Exchange or Blockchain Vaulta Site to a third party website. In such case, you are solely responsible for any actions taken on such website and we shall not be liable for any loss resulting in whole or in part from such website or provider.</p>
+                        <h6>9.4.4  Deposit and Withdrawal Limits</h6>
+                        <p>We may, in our sole discretion, impose daily, weekly, monthly, or other periodic limits on deposits and withdrawals, which we may implement, eliminate, increase or decrease without advance notice and your limits are determined by your membership verification level.</p>
+                        <h6>9.4.5  Reversals of payment instructions and/or negative balances</h6>
+                        <p>If you reverse a payment instruction initiated with your bank, payment services provider or equivalent or part of a transaction fails for any reason which results in your User Account having a negative balance, we may liquidate any assets held in any account you hold with us (including the User Account) to offset and reduce the negative balance. You remain fully responsible for settling the balance and we may engage debt collectors to pursue any outstanding debt on our behalf.</p>
+                        <h6>9.4.6 Account Membership and Upgrades</h6>
+                        <p>We place certain limits on user accounts not excluding withdrawals or deposits and request them to upgrade their account membership level which requires verification of user legal documents and any user account must have a certain balance on their ETH Wallet to qualify or get approved for a upgrade to another membership level with increased transaction limits.</p>
+                        <h6>9.4.6 Erroneous Deposits</h6>
+                        <p>In the event that any amount of fiat currency or Virtual Currency is deposited into your account in error (an "erroneous deposit"), you must notify Blockchain Vaulta immediately and return the erroneous deposit as soon as possible. In the event you do not return the erroneous deposit to Blockchain.com, you shall be indebted to Blockchain Vaulta in the amount of the erroneous deposit and Blockchain Vaulta shall have the right to debit this amount from your User Account in whole or in part until such time as the full amount has been returned. In addition, Blockchain Vaulta may, but be under no obligation to, take whatever further action it considers necessary in order to recover the erroneous deposit.</p>
+                        <h5>9.5 Blockchain Vaulta Activity</h5>
+                        <h6>9.5.1  Order Types</h6>
+                        <p>We shall, from time-to-time, offer you different types of orders that may be placed on Blockchain Vaulta Exchange. The Trading Principles contain more additional information on order types. We do not guarantee any order you place on Blockchain Vaulta Exchange will be executed or executed at any particular time.</p>
+                        <h6>9.5.2  Cancellation Policy</h6>
+                        <p>Blockchain Vaulta Exchange is an active and live marketplace. By entering any order, you are bound to its terms and may not be able to cancel such order. You must review all of the details prior to entering an order on Blockchain Vaulta Exchange, including the quantity and price of the Virtual Currency to be bought or sold, as well as the amount of funds, either Virtual Currency or fiat currency, that will be required in connection with your trade request. Please see the Trading Principles for additional information on Blockchain.com’s cancellation practices.</p>
+                        <h6>9.5.3  Blockchain Vaulta Own Account Dealing</h6>
+                        <p>Any member of the Blockchain Vaulta Group may be actively participating on the Blockchain Vaulta Exchange and placing its own orders. This means that the counterparty to an order you place on the Blockchain Vaulta Exchange may be Blockchain Vaulta acting in such a capacity.</p>
+                        <h6>9.6 Fees</h6>
+                        <p>You must pay any fees associated with your use of Blockchain Vaulta Exchange. Our network fees are all charged in Ethereum (ETH). Generally, Blockchain Vaulta will debit fees for orders from your Ethereum wallet balance. Blockchain may charge other fees, or process fees in an alternative manner, but only with prior written notice to you. On the Blockchain Site, we shall post a fee schedule that we may amend at any time in our sole discretion, with prior written notice to you. In the event you are found to owe us any amount of fiat currency or Virtual Currency, we may offset such amount against any funds we hold for you, whether in Virtual Currency or fiat currency.</p>
+                        <h5>10 GENERAL RISK FACTORS</h5>
+                        <p>Your use of the Services requires you to bear risks for which we cannot be held responsible. We list some, but not all of these risks below:
+                        a) Hardware, software or connections required to interact with a Virtual Currency network might fail, succumb to malware, unauthorised access or malicious attacks.
+                        Third parties may obtain unauthorised access to the Services, including, but not limited to your public and private keys. Blockchain Vaulta shall not be responsible for any communication failures, disruptions, errors, distortions or delays you may experience when using the Services, however caused.
+                        b)  Forks, unknown vulnerabilities in or unanticipated changes to the network protocol may cause losses to you or others. Blockchain Vaulta has no control over any cryptocurrency network and shall not be responsible for any harm occurring as a result of the inability to reverse a transaction, and any losses in connection therewith due to erroneous or fraudulent actions.
+                        c)  The risk of loss of value in using Services involving Virtual Currencies may be substantial and losses may occur over a short period of time. In addition, price and liquidity are subject to significant fluctuations that may be unpredictable.
+                        d)  Virtual Currencies are not legal tender and are not backed by any sovereign government. In addition, the legislative and regulatory landscape around Virtual Currencies is constantly changing and may affect your ability to use, transfer, or exchange Virtual Currencies.
+                        e)  When placing a “market order” in a Virtual Currency, your order will be executed immediately at the current market price. Market orders do not carry a limit price and will trade with anything on the order book. During periods of high volume, fast market conditions, illiquidity, or volatility in the marketplace, the actual price that a market order is executed at may be different from the best price indicated at the time of your order, and in some cases significantly so.
+                        f)  Under certain market conditions you may find it difficult to liquidate a position. In such circumstances, Blockchain Vaulta Exchange may not have sufficient demand to meet your request to execute such a transaction. Placing contingent orders, such as a “stop” or “limit” order does not guarantee your potential loss will be limited to an intended amount, as market conditions may make it difficult to execute such orders. You may suffer losses due to orders executing at lower or higher values than anticipated or requested.
+                        g)  Virtual Currency transactions may not be reversible. Once you send Virtual Currency to an address, you may lose access to your Virtual Currency temporarily or indefinitely. For example, an address may have been entered incorrectly, or an address may belong to an entity that will not return your Virtual Currency. Virtual Currency mistakenly sent to an address we control may not be recoverable.
+                        By using the Services, you agree that the data sources that maintain your accounts and any third parties that interact with your Credentials or account data in connection with our service are not liable for any loss, theft, compromise, or misuse whatsoever in connection with our services (including negligence), except to the extent such liability cannot be limited under applicable law.
+                        Data sources make no warranties of any kind related to the data provided by our services-- whether express, implied, statutory, or otherwise. No data provided by us is an official record of any of your accounts.</p>
+                        <h5>11 GENERAL PROVISIONS</h5>
+                        <h6>11.1 Intellectual Property</h6>
+                        <p><b>11.1.1</b>  Unless otherwise indicated by us, all intellectual property rights and any content provided in connection with the Blockchain Vaulta Site or the Services, are the property of Blockchain Vaulta or our licensors or suppliers and are protected by applicable intellectual property laws. We do not give any implied licence for the use of the contents of the Blockchain Vaulta Site or the Services.</p>
+                        <p><b>11.1.2</b>  You accept and acknowledge that the material and content contained in or delivered by the Blockchain Vaulta Site or the Services is made available for your personal, lawful, non- commercial use only and that you may only use such material and content for the purpose of using the Blockchain Vaulta Site or the Services as set forth in this Agreement.</p>
+                        <p><b>11.1.3</b>  You further acknowledge that any other use of content from the Blockchain Vaulta Site or the Services is strictly prohibited and you agree not to infringe or enable others to infringe our intellectual property rights. You agree to retain all copyrighted and other proprietary notices contained in the material provided via the Blockchain Vaulta Site or the Services on any copy you make of the material but failing to do so shall not prejudice Blockchain.com’s intellectual property rights therein.</p>
+                        <p><b>11.1.4</b>  You may not sell or modify materials derived or created from the Blockchain Vaulta Site or the Services or reproduce, display, publicly perform, distribute or otherwise use the materials in any way for any public or commercial purpose. Your use of such materials on any other website or on a file-sharing or similar service for any purpose is strictly prohibited. You may not copy any material or content derived or created from the Blockchain Vaulta Site or the Services without our express, written permission.</p>
+                        <p><b>11.1.5</b>  Any rights not expressly granted herein to use the materials contained on or through the Blockchain Vaulta Site or the Services are reserved by Blockchain Vaulta in full.</p>
+                        <h6>11.2  Connection by Envestnet | Yodlee</h6>
+                        <p>The Services may be connected by Envestnet | Yodlee. When you request data from a source connected to the Services, Yodlee collects that data and provides it to us. Yodlee acts on our behalf in this process, which means we share your data with Yodlee as one of our service providers. For more information on how Yodlee collects, uses, stores, and handles your data, please see Envestnet | Yodlee’s Commitment to its Clients and their Users (www.yodlee.com/clients-consumers). If there is any inconsistency between Yodlee’s Commitment and this Agreement regarding Yodlee’s activities, then Yodlee’s Commitment is correct.</p>
+                        <h6>11.3  Accuracy of Information</h6>
+                        <p><b>11.3.1</b>  We endeavour to verify the accuracy of any information displayed, supplied, passing through or originating from the Services, but such information may not always be accurate or current. Accordingly, you should independently verify all information before relying on it, and any decisions or actions taken based upon such information are your sole responsibility.</p>
+                        <p><b>11.3.2</b>  We make no representation or warranty of any kind, express or implied, statutory or otherwise, regarding the contents of the Services, information and functions made accessible through the Services, any hyperlinks to third party websites, or the security associated with the transmission of information through the Services, or any website linked to the Services.</p>
+                        <h6>11.4 Third Party Services and Content</h6>
+                        <p><b>11.4.1 </b> In using the Services, you may view content or services provided by third parties, including links to web pages and services of such parties (Third Party Content). We do not control, endorse or adopt any Third Party Content and have no responsibility for Third Party Content, including, without limitation, material that may be misleading, incomplete, erroneous, offensive, indecent or otherwise objectionable in your jurisdiction. In addition, your dealings or correspondence with such third parties are solely between you and the third party.</p>
+                        <p><b>11.4.2</b>  We are not responsible or liable for any loss or damage of any sort incurred as a result of any such dealings and your use of Third Party Content is at your own risk.</p>
+                        <h6>11.5  Cooperation with Law Enforcement</h6>
+                        <p>Blockchain Vaulta may, from time-to-time, respond to requests from third parties, courts, law enforcement, regulators and policymakers by producing certain information about or relating to your use of the Services.</p>
+                        <h6>11.6  Recordkeeping</h6>
+                        <p>Depending on the Services used by you, Blockchain Vaulta reserves the right, in our sole discretion, to create and maintain certain records of your activity and communications relating to your User Account.</p>
+                        <h6>11.7  Death of account holder</h6>
+                        <p><b>11.7.1</b>  For security reasons, if we receive legal documentation confirming your death or other information leading us to believe you have died, we will freeze your User Account and during this time, no transactions may be completed until: (i) your designated fiduciary has opened a new User Account, as further described below, and the entirety of your User Account has been transferred to such new account, or (ii) we have received proof in a form satisfactory to us that you have not died. If we have reason to believe you may have died but we do not have proof of your death in a form satisfactory to us, you authorise us to make inquiries, whether directly or through third parties, that we consider necessary to ascertain whether you have died.</p>
+                        <p><b>11.7.2</b>  Upon receipt by us of proof satisfactory to us that you have died, the fiduciary you have designated in a valid will or similar testamentary document will be required to open a new User Account. If you have not designated a fiduciary, then we reserve the right to (i) treat as your fiduciary any person entitled to inherit your User Account, as determined by us upon receipt and review of the documentation we, in our sole and absolute discretion, deem necessary or appropriate, including (but not limited to) a will, a living trust or a small estate affidavit, or (ii) require an order designating a fiduciary from a court having competent jurisdiction over your estate. In the event we determine, in our sole and absolute discretion, that there is uncertainty regarding the validity of the fiduciary designation, we reserve the right to require an order resolving such issue from a court of competent jurisdiction before taking any action relating to your User Account.</p>
+                        <p><b>11.7.3</b>  Pursuant to the above, the opening of a new User Account by a designated fiduciary is mandatory following the death of a User Account owner, and you hereby agree that your fiduciary will be required to open a new User Account and provide any requisite information under this Agreement in order to gain access to the contents of your User Account.</p>
+                        <h5>12 FEEDBACK AND COMPLAINTS</h5>
+                        <h6>12.1 Feedback</h6>
+                        <p><b>12.1.1</b>  Blockchain Vaulta strives to improve its Services to address feedback. If you have ideas or suggestions regarding improvements or additions to the Services, we would like to hear them; however, any submission shall be subject to this User Agreement.</p>
+                        <p><b>12.1.2 </b> Under no circumstances shall disclosure of any idea or feedback, or any related material to Blockchain Vaulta be subject to any obligation of confidentiality or expectation of compensation.</p>
+                        <p><b>12.1.3</b>  By submitting an idea or feedback or any related material that would be subject to intellectual property rights (the Work) to Blockchain.com, you grant to Blockchain.com, with respect to the Work submitted, a non-exclusive, perpetual, global, royalty-free licence to use all of the content of such ideas and feedback, for any purpose whatsoever.</p>
+                        <p><b>12.1.4</b>  By submitting Work, you are waiving any moral rights to the fullest extent permitted under law that you may have in the Work and are representing and warranting to Blockchain Vaulta that the Work originated with you, no one else has any rights in the Work, and that Blockchain Vaulta is free of any royalty to implement the Work and to use the related material if so desired, as provided or modified by Blockchain.com, without obtaining permission or licence from any third party.</p>
+                        <p><b>12.1.5</b>  Blockchain Vaulta may sub-license in any way all Work and material you have submitted to Blockchain.com.</p>
+                        <h6>12.2 Technical Support</h6>
+                        <p>We shall use commercially-reasonable efforts to supply email-based technical support services, but cannot guarantee immediate responses, especially during times of high volume.</p>
+                        <h5>13 REPRESENTATIONS, WARRANTIES, INDEMNIFICATION AND LIMITATIONS OF LIABILITY</h5>
+                        <h6>13.1  No Violation of Law</h6>
+                        <p>You represent and warrant to us that you: (a) are not located in, under the control of, or a resident of any Restricted Location or any country to which the United States has embargoed goods and services; (b) are not identified as a “Specially Designated National” by the United States Treasury Department; and (c) shall not use the Services if you are prohibited by any applicable law, regulation, or rule from doing so.</p>
+                        <h6>13.2  Acceptable Use of Blockchain Vaulta Services</h6>
+                        <p>When accessing or using the Services, you agree that you are solely responsible for your conduct while accessing and using our Services. Without limiting the generality of the foregoing, you agree that you shall not:
+                        (a)  use the Services in any manner that could interfere with, disrupt, negatively affect or inhibit other users from fully enjoying the Services, or that could damage, disable, overburden or impair the functioning of our Services in any manner;
+                        (b)  use the Services to pay for, support or otherwise engage in any illegal activities, including, but not limited to illegal gambling, fraud, money laundering, or terrorist activities;
+                        (c) use any robot, spider, crawler, scraper or other automated means or interface not provided by us to access our Services or to extract data;
+                        (d)  use or attempt to use another person’s User Account, or credentials without authorisation;
+                        (e)  attempt to circumvent any content filtering techniques we employ, or attempt to access any service or area of our Services that you are not authorised to access;
+                        (f)  introduce to the Services any virus, Trojan, worms, logic bombs or other harmful material;
+                        (g)  develop any third-party applications that interact with our Services without our prior written consent;
+                        (h)  provide false, inaccurate, or misleading information; or
+                        (i)  encourage or induce any other person to engage in any of the activities prohibited under this Section.</p>
+                        <h6>13.3  Disclaimer of Warranties</h6>
+                        <p>BLOCKCHAIN VAULTA DISCLAIMS ANY AND ALL PROMISES, REPRESENTATIONS AND WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, DATA ACCURACY, SYSTEM INTEGRATION, TITLE,
+                        NON-INFRINGEMENT AND/OR QUIET ENJOYMENT, AND ANY SERVICES PROVIDED BY BLOCKCHAIN VAULTA ARE PROVIDED “AS IS” AND “AS AVAILABLE.” EXCEPT AS EXPRESSLY PROVIDED HEREIN, YOU ACKNOWLEDGE THAT BLOCKCHAIN VAULTA MAKES NO WARRANTIES UNDER THIS AGREEMENT DIRECTLY FOR THE BENEFIT OF ANY END USER, AND THAT BLOCKCHAIN.COM’S OBLIGATIONS UNDER THIS AGREEMENT ARE FOR THE BENEFIT OF YOU ONLY, AND NOT FOR THE BENEFIT OF ANY OTHER PERSON. IN ENTERING INTO THIS AGREEMENT, YOU REPRESENT THAT YOU HAVE NOT RELIED UPON ANY REPRESENTATION OR WARRANTY OF BLOCKCHAIN VAULTA OR ITS AFFILIATES EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT. WE DO NOT MAKE ANY REPRESENTATIONS OR WARRANTIES THAT ACCESS TO THE SERVICES SHALL BE CONTINUOUS, UNINTERRUPTED, TIMELY, OR ERROR-FREE.</p>
+                        <h6>13.4  Limitation of Liability</h6>
+                        <p>IN NO EVENT SHALL BLOCKCHAIN.COM, ITS AFFILIATES AND SERVICE PROVIDERS, OR ANY OF THEIR RESPECTIVE OFFICERS, DIRECTORS, AGENTS, EMPLOYEES OR REPRESENTATIVES, BE LIABLE FOR: (A) ANY AMOUNT GREATER THAN THE VALUE OF THE VIRTUAL CURRENCY ACTUALLY DELIVERED TO US BY YOU OR BY YOU TO US IN CONNECTION WITH A SUPPORTED VIRTUAL CURRENCY TRANSACTION COMPLETED ON ITS DISPLAYED TERMS OVER THE LAST SIX MONTHS, VALUED IN GREAT BRITISH POUNDS AT THE TIME OF THE TRANSACTION; OR (B) FOR ANY LOST PROFITS OR ANY SPECIAL, INCIDENTAL, INDIRECT, INTANGIBLE, OR CONSEQUENTIAL DAMAGES, WHETHER BASED IN CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, ARISING OUT OF OR IN CONNECTION WITH AUTHORIZED OR UNAUTHORIZED USE OF THE SERVICES, OR THIS AGREEMENT, EVEN IF AN AUTHORIZED REPRESENTATIVE OF BLOCKCHAIN VAULTA HAS BEEN ADVISED OF, KNEW OF, OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES. FOR EXAMPLE (AND WITHOUT LIMITING THE SCOPE OF THE PRECEDING SENTENCE), YOU MAY NOT RECOVER FOR LOST PROFITS, LOST BUSINESS OPPORTUNITIES, OR OTHER TYPES OF SPECIAL, INCIDENTAL, INDIRECT, INTANGIBLE, OR CONSEQUENTIAL DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION MAY NOT APPLY TO YOU.</p>
+                        <p>UNDER NO CIRCUMSTANCES SHALL WE BE REQUIRED TO DELIVER TO YOU ANY VIRTUAL CURRENCY AS DAMAGES, MAKE SPECIFIC PERFORMANCE OR ANY OTHER REMEDY. IF YOU WOULD BASE YOUR CALCULATIONS OF DAMAGES IN ANY WAY ON THE VALUE OF VIRTUAL CURRENCY, YOU AND WE AGREE THAT THE CALCULATION SHALL BE BASED ON THE LOWEST VALUE OF THE VIRTUAL CURRENCY DURING THE PERIOD BETWEEN THE ACCRUAL OF THE CLAIM AND THE AWARD OF DAMAGES.</p>
+                        <p>WE SHALL NOT BE LIABLE FOR ANY DAMAGES CAUSED IN WHOLE OR IN PART BY (A) THE MALFUNCTION, UNEXPECTED FUNCTION OR UNINTENDED FUNCTION OF ANY COMPUTER OR CRYPTOCURRENCY NETWORK, INCLUDING WITHOUT LIMITATION LOSSES ASSOCIATED WITH NETWORK FORKS, REPLAY ATTACKS, DOUBLE-SPEND ATTACKS, SYBIL ATTACKS, 51% ATTACKS, GOVERNANCE DISPUTES, MINING DIFFICULTY, CHANGES IN CRYPTOGRAPHY OR CONSENSUS RULES, HACKING OR CYBERSECURITY BREACHES; (B) THE CHANGE IN VALUE OF ANY CRYPTOCURRENCY; (C) ANY CHANGE IN LAW, REGULATION OR POLICY, OR (D) FORCE MAJEURE. THIS LIMITATION OF LIABILITY IS INTENDED TO APPLY WITHOUT REGARD TO WHETHER OTHER PROVISIONS OF THIS AGREEMENT HAVE BEEN BREACHED OR HAVE PROVEN INEFFECTIVE.</p>
+                        <h6>13.5  Indemnification</h6>
+                        <p>You agree to indemnify and hold harmless Blockchain.com, its affiliates, subsidiaries, directors, managers, members, officers, and employees from any and all claims, demands, actions, damages, losses, costs or expenses, including without limitation, reasonable legal fees, arising out of or relating to your or any other person’s use of your credentials or User Account in connection with: (a) use of the Blockchain Vaulta Site or Services; (b) a reversal of payment instructions by you which results in a negative account balance (c) breach of this User Agreement or any other policy; (d) feedback or submissions you provide; (e) false, incomplete, or misleading information relied upon by us to verify your identity and source of funds, where applicable; or (f) violation of any rights of any other person or entity; provided however, that you shall not indemnify Blockchain Vaulta for claims or losses arising out of Blockchain.com’s gross negligence or willful misconduct. This indemnity shall apply to your successors and assigns and shall survive any termination or cancellation of this User Agreement.</p>
+                        <p><b>13.6</b>  Any and all of our indemnities, warranties, and limitations of liability (whether express or implied) are hereby excluded to the fullest extent permitted under law except as set forth herein. Nothing in this User Agreement excludes or limits liability which may not be limited or excluded under applicable law.</p>
+                        <h5>14 MISCELLANEOUS </h5>
+                        <h6>14.1 Force Majeure</h6>
+                        <p>If by reason in whole or in part of any Force Majeure Event, either you or Blockchain Vaulta is delayed or prevented from complying with this User Agreement, then such delay or non- compliance shall not be deemed to be a breach of this User Agreement and no loss or damage shall be claimed by you or Blockchain Vaulta by reason thereof. “Force Majeure Event” means any event beyond the party’s reasonable control, including, but not limited to, flood, extraordinary weather conditions, earthquake, or other act of God, fire, war, insurrection, riot, labor dispute, accident, action of government, communications, power failure, failure in bank performance, or equipment or software malfunction including network splits or “forks” or unexpected changes in a computer network upon which the Services rely.</p>
+                        <h6>14.2  Taxes</h6>
+                        <p>It is your responsibility to determine what, if any, taxes apply due to your use of Blockchain Vaulta Services, and it is your responsibility to report and remit the correct tax to the appropriate tax authority. Blockchain Vaulta is not responsible for determining whether taxes apply to your Virtual Currency transactions or for collecting, reporting, withholding or remitting any taxes arising from any virtual currency transactions.</p>
+                        <h6>14.3  Severability, Reformation</h6>
+                        <p>In the event that any provision of this User Agreement is unenforceable under applicable law, the validity or enforceability of the remaining provisions will not be affected. To the extent any provision of this User Agreement is judicially determined to be unenforceable, a court of competent jurisdiction may reform any such provision to make it enforceable. The provisions of this User Agreement will, where possible, be interpreted so as to sustain its legality and enforceability.</p>
+                        <h6>14.4  Assignment</h6>
+                        <p>This User Agreement shall be binding on your successors, heirs, personal representatives, and assigns. You may not assign or transfer any of your rights or obligations under this User Agreement without prior written consent of Blockchain.com, which may be withheld in Blockchain.com’s sole discretion. We may assign rights or delegate duties under this User Agreement in our sole discretion.</p>
+                        <h6>14.5  Relationship of the Parties</h6>
+                        <p>Nothing in this User Agreement is intended to, nor shall create any partnership, joint venture, agency, consultancy or trusteeship. You and Blockchain Vaulta are independent contractors for purposes of this User Agreement.</p>
+                        <h6>14.6  Entire Agreement</h6>
+                        <p>This User Agreement constitutes the entire agreement among the Parties with respect to the subject matter described herein and shall supersede all prior agreements and understandings, written or oral, among the Parties. Subsequent discussions or negotiations between you and Blockchain Vaulta or Blockchain Vaulta personnel shall only amend or become part of this User Agreement by way of a written amendment specifically referencing the last updated date and name of this User Agreement.</p>
+                        <h6>14.7  Contact Information</h6>
+                        <p>For any purpose other than technical support requests, you may contact us by registered post or courier:
+                        Blockchain Vaulta Minshull House
+                        67 Wellington Road North Stockport SK4 2LP Cheshire
+                        United Kingdom
+                        Blockchain.com, Inc. 251 Little Falls Drive Wilmington DE 19808 USA
+                        With an electronic copy to: legal@Blockchain.Vaulta-Wallet.com
+                        For technical support requests only, you may submit a request via our Support tool at: support@Blockchain.Vaulta-Wallet.com or contact our live chat support.</p>
+                        <h5>15. DISPUTE RESOLUTION FOR UNITED STATES USERS</h5>
+                        <h6>15.1  Disputes</h6>
+                        <p>If you live in the United States (or, if you are a business, have your principal place of business in the United States), any dispute arising between you and us under this User Agreement or our relationship (whether arising out of contract, tort, statute or any other manner) shall be settled in binding arbitration, in accordance with the Federal Arbitration Act under the American Arbitration Association’s rules; provided, however, nothing in this Agreement will waive, preclude or otherwise limit your right to (i) bring an individual action in a US small claims court or (ii) file a representative action solely to obtain a public injunction.</p>
+                        <h6>15.2  Arbitration</h6>
+                        <p>The arbitration will be conducted by a single, neutral arbitrator and shall take place in the county or parish of your billing address, or another mutually agreeable location, in the English language. The arbitrator shall apply the law of the state of New York, without regard to its conflict of laws principles. The arbitrator may award any relief that a court of competent jurisdiction could award, including attorneys' fees when authorised by law, and the arbitration decision may be enforced in any court. You agree that the arbitrator shall have the authority to order relief, and you agree to abide by all decisions and awards rendered in such a proceeding, which shall be final and conclusive. At your request, hearings may be conducted in person or by telephone and the arbitrator may provide for submitting and determining motions on briefs, without oral hearings. The prevailing party in any action or proceeding to enforce this agreement shall be entitled to reasonable costs and attorneys' fees. If the arbitrator(s) or administrator imposes filing fees or other administrative costs on you, we will reimburse you, upon request, to the extent such fees or costs would exceed those that you would otherwise have to pay if you were proceeding instead in a court. If a court decides that any provision of this section concerning Arbitration is invalid or unenforceable, that provision shall be severed and resolved in accordance with English law exclusively and the other parts of this section concerning Arbitration shall still apply. In no case shall the remainder of this User Agreement be affected. If the invalidity or unenforceability of a provision causes a dispute to proceed in a court instead of arbitration, the Parties agree that such court must be located in London, England, applying English law.</p>
+                        <h6>15.3 No Trial by Jury</h6>
+                        <p>By entering into this User Agreement, you expressly waive your right to a trial by jury and right to participate in a class action lawsuit.</p>
+                        <h6>16. DISPUTE RESOLUTION FOR NON-US USERS</h6>
+                        <p>If you live outside of the United States (or, if you are a business, have your principal place of business outside of the United States), any dispute arising between you and us under this User Agreement or our relationship (whether arising out of contract, tort, statute or any other manner), the courts located in London, England shall have exclusive jurisdiction of such dispute, and will hear the dispute under English law.</p>
+
+					</div>
+					
+				</div>
+      			
+       		</div>
+       	</div>
+       	<!--End Section -->
+       	
+       	
+       	
+       	<!-- Section Footer -->
+			<div class="footer-section section section-pad-md light bg-footer">
+			<div class="imagebg footerbg">
+				<img src="images/footer-bg.png" alt="footer-bg">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 wgs-box res-m-bttm-lg">
+						<!-- Each Widget -->
+						<div class="wgs-footer wgs-menu">
+							<h5 class="wgs-title ucap">Our Company</h5>
+							<div class="wgs-content">
+								<ul class="menu">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="service.html">Our Services</a></li>
+									<li><a href="market-data.html">Market Data</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="agreement.html">User Agreement</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					<div class="col-md-3 col-sm-6 wgs-box res-m-bttm-lg">
+						<!-- Each Widget -->
+						<div class="wgs-footer wgs-menu">
+							<h5 class="wgs-title ucap">Services</h5>
+							<div class="wgs-content">
+								<ul class="menu">
+									<li><a href="signup.html">Buy Bitcoins</a></li>
+									<li><a href="signup.html">Buy Ethereum</a></li>
+									<li><a href="signup.html">Sell Bitcoins</a></li>
+									<li><a href="signup.html">Bitcoin Trading</a></li>
+									<li><a href="signup.html">Bitcoin Conversion</a></li>
+								</ul>
+								<!-- <ul class="menu">
+									<li><a href="#">Payment Options</a></li>
+									<li><a href="#">Fee Schedule</a></li>
+									<li><a href="#">Getting Started</a></li>
+									<li><a href="#">Identity Verification Guide</a></li>
+									<li><a href="#">Card Verification Guide</a></li>
+								</ul> -->
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+					
+					<div class="col-md-6 col-sm-6 wgs-box res-m-bttm">
+						<!-- Each Widget -->
+						<div class="wgs-footer wgs-contact">
+							<h5 class="wgs-title ucap">get in touch</h5>
+							<div class="wgs-content">
+								<ul class="wgs-contact-list">
+                                    <li><span class="pe pe-7s-map-marker"></span>Blockchain Vaulta Minshull House<br/> 67 Wellington Road North Stockport <br />SK4 2LP Cheshire <br />United Kingdom</li>
+                                   <li> Email : <a href="mailto:support@blockchain.vaulta-wallet.com">support@blockchain.vaulta-wallet.com</a> <br/>Web : <a href="https://vaulta-wallet.com">www.vaulta-wallet.com</a>
+                                       <br/>Skype live: <a>cid.a6ad9b99091b2601</a>
+                                   </li>
+                                </ul>
+							</div>
+						</div>
+						<!-- End Widget -->
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- End Section -->
+		
+		<!-- Copyright -->
+		<div class="copyright light">
+			<div class="container">
+				<div class="row">
+					<div class="site-copy col-sm-7">
+						<p>Copyright &copy; 2021 Vaulta Wallet </p>
+					</div>
+					<div class="col-sm-5 text-right mobile-left">
+						<!-- <ul class="social">
+							<li><a href="#"><em class="fa fa-facebook"></em></a></li>
+							<li><a href="#"><em class="fa fa-twitter"></em></a></li>
+							<li><a href="#"><em class="fa fa-linkedin"></em></a></li>
+							<li><a href="#"><em class="fa fa-google-plus"></em></a></li>
+						</ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Copyright -->
+		
+		<!-- Preloader !remove please if you do not want -->
+		<div id="preloader"><div id="status">&nbsp;</div></div>
+		<!-- Preloader End -->
+		
+		<!-- JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		
+		<script src="assets/js/jquery.bundle.js"></script>
+		<script src="assets/js/script.js"></script>
+		
+	</body>
+</html>
